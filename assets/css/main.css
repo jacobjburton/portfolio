@@ -3905,7 +3905,9 @@
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		/* background-image: url("images/intro.svg"); */
+		/* background-image: url("../../images/sunset.jpg"); */
+		background-image: url("../../images/hanaumabay.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
