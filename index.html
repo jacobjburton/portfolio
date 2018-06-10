@@ -210,8 +210,8 @@
 						<h2>About Me</h2>
 						<span class="image fit"><img src="./images/profile-photo.jpg" alt=""  style="height: 250px; width: 250px;"/></span>
 						<p>I am a former Licensed Practical Nurse transitioning into a career in full stack web development. I am excited about starting a new career and bring to the table my experience working with a large variety of people and my programming skill set.</p>
-						<p style="margin-bottom: 0.5rem;">"The only use of an obstacle is to be overcome. All that an obstacle does with brave men is, not to frighten them, but to challenge them."</p>
-						<p>    - Woodrow Wilson</p>
+						<!-- <p style="margin-bottom: 0.5rem;">"The only use of an obstacle is to be overcome. All that an obstacle does with brave men is, not to frighten them, but to challenge them."</p>
+						<p>    - Woodrow Wilson</p> -->
 					</div>
 				</section>
 
@@ -222,7 +222,7 @@
 						<p>Thank you for your interest.  Contact me via e-mail, or visit my github repository and LinkedIn profile using the links below.</p>
 						<div class="split style1">
 							<section>
-								<form method="post" action="mailto:jacobburton@gmail.com" enctype="text/plain">
+								<form method="POST" action="jacobburton@gmail.com" netlify name="contact">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -235,8 +235,10 @@
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="5"></textarea>
 									</div>
+									<div data-netlify-recaptcha></div>
 									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
+										<li><input type="submit" value="Send Message" class="button submit"/></li>
+										<!-- <li><a href="" class="button submit">Send Message</a></li> -->
 									</ul>
 								</form>
 							</section>
